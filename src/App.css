@@ -1,0 +1,96 @@
+html, body, #root, #root > div{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: Helvetica, sans-serif
+}
+
+body{
+  color: #333333;
+}
+
+.HStack{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.VStack{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Center{
+  justify-content: center;
+  align-items: center;
+}
+
+#roll-button{
+  width: 200px;
+  height: 50px;
+  background: transparent;
+  border: solid 2px #77df77;
+  border-radius: 10px;
+  color: #77df77;
+  font-size: 20px;
+
+  transition: 0.1s;
+}
+#roll-button:hover{
+  background-color: #77df77;
+  border-color: #84e384;
+  border-width: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+.chart{
+  width: 90%;
+  height: 70%;
+  text-align: center;
+}
+.chart .label{
+  bottom: 0;
+  color: #333333;
+  /* font-size: 16px; */
+  font-size: 1vw;
+}
+.chart .total{
+  margin: 8px 0;
+  opacity: 0.4;
+  font-size: 12px;
+}
+.bar-wrapper{
+  width: 50px;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: hidden;
+}
+.bar{
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  background: lightgreen;
+  border: solid 1px #33333311;
+
+  transition: 0.5s;
+}
+
+#options{
+  margin: 10px;
+}
+#options p{
+  margin: 0 2px;
+  text-align: center;
+}
+
+input[type=number]{
+  margin: 2px 4px;
+  padding: 10px;
+  background: #eeeeee;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  font-size: 16px;
+  text-align: left;
+}
